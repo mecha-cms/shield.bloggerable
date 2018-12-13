@@ -11,6 +11,9 @@
   box-shadow:none !important;
 }
 
+.post-snippet p:first-child {margin-top:0}
+.post-snippet p:last-child {margin-bottom:0}
+
 /* Mecha uses `is-page` class not to detect that the current page is single page but to detect that the current page is generated from a page file. Mecha uses `is-pages` class to detect if current page is multiple page, if there is no `is-pages` class, it means that the current page is single page */
 .is-pages .post-title {font-size:1.5rem}
 .is-pages .post {
