@@ -1,0 +1,21 @@
+---
+type: YAML
+...
+
+article: Artikel
+articles: Artikel
+
+do_continue: Baca Selengkapnya
+
+do_share: Bagikan
+
+posted_by__: Diposting oleh %{0}% on %{1}%
+powered_by__: Diberdayakan oleh <strong>Mecha %{0}%</strong>
+
+widget_comment:
+  recent: Komentar Terbaru
+widget_page:
+  recent: Posting Terbaru
+  relate: Posting Terkait
+widget_tag:
+  $: Label

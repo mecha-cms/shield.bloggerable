@@ -1,3 +1,7 @@
+</div>
+<?php if ($site->is('pages') || $site->has('parent')): ?>
+  <?php Shield::get('pager'); ?>
+<?php endif; ?>
 </div><!-- /.main -->
 </main><!-- /.main-col -->
 <?php Shield::get('aside'); ?>

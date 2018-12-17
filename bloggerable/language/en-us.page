@@ -1,0 +1,21 @@
+---
+type: YAML
+...
+
+article: Article
+articles: Articles
+
+do_continue: Read More
+
+do_share: Share
+
+posted_by__: Posted by %{0}% on %{1}%
+powered_by__: Powered by <strong>Mecha %{0}%</strong>
+
+widget_comment:
+  recent: Recent Comments
+widget_page:
+  recent: Recent Posts
+  relate: Related Posts
+widget_tag:
+  $: Tags

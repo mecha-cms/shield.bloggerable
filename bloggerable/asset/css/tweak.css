@@ -1,5 +1,49 @@
-.toc {margin-bottom:1rem}
+/* Layout Fix */
+img {
+  max-width:100%;
+  height:auto;
+}
+.block {
+  display:block;
+  width:100%;
+}
+.span,
+.span-block {
+  display:inline;
+  width:auto;
+}
+.span-block {display:inline-block}
+.align-left {
+  float:left;
+  margin-top:.5rem;
+  margin-right:1.5rem;
+  margin-bottom:.5rem;
+}
+.align-right {
+  float:right;
+  margin-top:.5rem;
+  margin-bottom:.5rem;
+  margin-left:1.5rem;
+}
+.align-left img,
+.align-right img {display:block}
+.align-center,
+.align-center img {
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+}
+.text-left {text-align:left}
+.text-right {text-align:right}
+.text-center {text-align:center}
+.text-justify {text-align:justify}
 
+.toc {margin-bottom:1rem}
+.comment .comment-author {font:inherit}
+.post-snippet p:first-child {margin-top:0}
+.post-snippet p:last-child {margin-bottom:0}
+
+/* Other(s) */
 .button.comment-user,
 .button.comment-user:focus,
 .button.comment-user:hover,
@@ -11,13 +55,113 @@
   box-shadow:none !important;
 }
 
-.post-snippet p:first-child {margin-top:0}
-.post-snippet p:last-child {margin-bottom:0}
+.widget-content ul,
+.widget-content li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
 
-/* Mecha uses `is-page` class not to detect that the current page is single page but to detect that the current page is generated from a page file. Mecha uses `is-pages` class to detect if current page is multiple page, if there is no `is-pages` class, it means that the current page is single page */
+.breadcrumb-item.active + .breadcrumb-item.active::before {content:'/'}
+
+/* Mecha uses `.is-page` class not to detect that the current page is single page but to detect that the current page is generated from a page file. Mecha uses `.is-pages` class to detect if current page is multiple page, if there is no `.is-pages` class, it means that the current page is single page */
 .is-pages .post-title {font-size:1.5rem}
 .is-pages .post {
   padding-bottom:2rem;
   margin-bottom:2rem;
   border-bottom:1px solid rgba(0,0,0,.125);
 }
+
+/* Copied from `.form-control` CSS */
+.input,
+.select,
+.textarea {
+  display:block;
+  width:100%;
+  height:calc(2.25rem + 2px);
+  padding:.375rem .75rem;
+  font-size:1rem;
+  line-height:1.5;
+  color:#495057;
+  background-color:#fff;
+  background-clip:padding-box;
+  border:1px solid #ced4da;
+  border-radius:.25rem;
+  transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+@media screen and (prefers-reduced-motion:reduce) {
+  .input,
+  .select,
+  .textarea {transition:none}
+}
+.input:focus,
+.select:focus,
+.textarea:focus {
+  color:#495057;
+  background-color:#fff;
+  border-color:#80bdff;
+  outline:0;
+  box-shadow:0 0 0 .2rem rgba(0,123,255,.25);
+}
+.input::-webkit-input-placeholder,
+.select::-webkit-input-placeholder,
+.textarea::-webkit-input-placeholder {
+  color:#6c757d;
+  opacity:1;
+}
+.input::-moz-placeholder,
+.select::-moz-placeholder,
+.textarea::-moz-placeholder {
+  color:#6c757d;
+  opacity:1;
+}
+.input:-ms-input-placeholder,
+.select:-ms-input-placeholder,
+.textarea:-ms-input-placeholder {
+  color:#6c757d;
+  opacity:1;
+}
+.input::-ms-input-placeholder,
+.select::-ms-input-placeholder,
+.textarea::-ms-input-placeholder {
+  color:#6c757d;
+  opacity:1;
+}
+.input::placeholder,
+.select::placeholder,
+.textarea::placeholder {
+  color:#6c757d;
+  opacity:1;
+}
+.input[disabled],
+.select[disabled],
+.textarea[disabled],
+.input[readonly],
+.select[readonly],
+.textarea[readonly] {
+  background-color:#e9ecef;
+  opacity:1;
+}
+.select[multiple],
+.select[size],
+.textarea {height:auto}
+
+.form-comment p > label,
+.form-contact p > label,
+.form-comment .p > label,
+.form-contact .p > label {
+  padding-top:.375rem;
+  padding-bottom:.375rem;
+}
+
+
+
+
+
+.comment.comment-status\:1 {
+  background:#eef;
+  border-radius:.25em;
+  padding:1em 1.25em;
+  margin-top:1em;
+}
+.comment.comment-status\:1 > .comment-figure {margin-left:1.25em}
