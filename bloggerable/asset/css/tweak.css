@@ -146,6 +146,29 @@ img {
 .select[size],
 .textarea {height:auto}
 
+/* Copied from `.message` CSS */
+.message {
+  position:relative;
+  padding:.75rem 1.25rem;
+  margin-bottom:1rem;
+  line-height:1.5;
+  background-color:#eee;
+  border:1px solid #e5e5e5;
+  border-radius:.25rem;
+}
+.message-success {
+  color:#155724;
+  background-color:#d4edda;
+  border-color:#c3e6cb;
+}
+.message-error {
+  color:#721c24;
+  background-color:#f8d7da;
+  border-color:#f5c6cb;
+}
+
+/* Other(s) */
+.container.messages {padding:0}
 .form-comment p > label,
 .form-contact p > label,
 .form-comment .p > label,
@@ -153,11 +176,6 @@ img {
   padding-top:.375rem;
   padding-bottom:.375rem;
 }
-
-
-
-
-
 .comment.comment-status\:1 {
   background:#eef;
   border-radius:.25em;

@@ -36,4 +36,5 @@
             <main class="main-col" id="main-col" role="main">
               <div class="main" id="main">
                 <?php Shield::get('path'); ?>
+                <?php echo $message; ?>
                 <div class="posts">

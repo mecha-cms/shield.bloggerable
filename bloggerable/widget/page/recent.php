@@ -22,7 +22,7 @@ call_user_func(function() {
     $id = To::slug(Path::N(__FILE__));
     Shield::get('widget', [
         'id' => 'page-recent',
-        'title' => 'Recent Posts',
+        'title' => $language->widget_page->recent,
         'content' => $content
     ]);
 });

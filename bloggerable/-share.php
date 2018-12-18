@@ -4,10 +4,13 @@
   <ul class="post-share-menu">
   <?php
 
+  $page_url = $page->url;
+  $page_title = $page->title;
+  $page_image = $page->image ?: $url . '/favicon.ico';
   $shares = [
-      'Twitter' => 'https://twitter.com/intent/tweet?text=' . urlencode($page->title) . '&amp;url=' . urlencode($page->url),
+      'Twitter' => 'https://twitter.com/intent/tweet?text=' . urlencode($page_title) . '&amp;url=' . urlencode($page_url),
       'Facebook' => 'https://www.facebook.com/sharer.php?u=' . urlencode($page->url),
-      'Pinterest' => 'https://pinterest.com/pin/create/button/?url=' . urlencode($page->url) . '&amp;media=' . urlencode($page->image ?: $url . '/favicon.ico')
+      'Pinterest' => 'https://pinterest.com/pin/create/button/?url=' . urlencode($page_url) . '&amp;media=' . urlencode($page_image)
   ];
 
   foreach ($shares as $k => $v) {
