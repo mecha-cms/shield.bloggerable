@@ -2,8 +2,9 @@
 
 if (Extend::exist('tag')) {
     echo '<ul class="post-label">';
-    call_user_func(function() {
-        extract(Lot::get());
+    call_user_func(function() use($lot) {
+        extract(Lot::get(), EXTR_SKIP);
+        $page = $lot['page'] ?? null;
         $tags = $page->tags->map(function($tag) {
             return '<li class="post-label-item">' . HTML::a($tag->title, $tag->url, false, ['class[]' => ['post-label-link'], 'rel' => 'tag']) . '</li>';
         });

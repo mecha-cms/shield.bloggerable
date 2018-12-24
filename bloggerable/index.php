@@ -1,7 +1,5 @@
 <?php
 
-ini_set('max_execution_time', 300); // 5 minute(s)
-
 // Widget state
 Lot::set('widget', new State(require __DIR__ . DS . 'state' . DS . 'widget.php'));
 
