@@ -25,7 +25,7 @@
             <a class="header-title-link" href="<?php echo $url; ?>"><?php echo $site->title; ?></a>
             <?php endif; ?>
           </h1>
-          <nav><?php Shield::get('nav'); ?></nav>
+          <nav><?php static::nav(); ?></nav>
         </div>
       </div>
     </header>
@@ -35,6 +35,6 @@
           <div class="main-content-row">
             <main class="main-col" id="main-col" role="main">
               <div class="main" id="main">
-                <?php Shield::get('path'); ?>
-                <?php echo $message; ?>
+                <?php static::trace(); ?>
+                <?php static::message(); ?>
                 <div class="posts">

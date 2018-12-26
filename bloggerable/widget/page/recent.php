@@ -20,7 +20,7 @@ call_user_func(function() {
         $content = '<p>' . $language->message_info_void($language->articles) . '</p>';
     }
     $id = To::slug(Path::N(__FILE__));
-    Shield::get('widget', [
+    static::widget([
         'id' => 'page-recent',
         'title' => $language->widget_page->recent,
         'content' => $content

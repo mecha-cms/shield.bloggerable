@@ -28,7 +28,7 @@ if (Extend::exist('tag')) {
             }
         }
         $content = $content ?: '<p>' . $language->message_info_void($language->tags) . '</p>';
-        Shield::get('widget', [
+        static::widget([
             'id' => 'tag',
             'title' => $language->widget_tag->{'$'},
             'content' => $content

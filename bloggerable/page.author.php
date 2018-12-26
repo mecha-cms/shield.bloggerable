@@ -20,6 +20,6 @@
   </li>
   <?php endif; ?>
   <li class="post-meta-item">
-    <?php Shield::get('-share', ['page' => $page]); ?>
+    <?php static::_share(['page' => $page]); ?>
   </li>
 </ul>

@@ -64,14 +64,6 @@ img {
 
 .breadcrumb-item.active + .breadcrumb-item.active::before {content:'/'}
 
-/* Mecha uses `.is-page` class not to detect that the current page is single page but to detect that the current page is generated from a page file. Mecha uses `.is-pages` class to detect if current page is multiple page, if there is no `.is-pages` class, it means that the current page is single page */
-.is-pages .post-title {font-size:1.5rem}
-.is-pages .post {
-  padding-bottom:2rem;
-  margin-bottom:2rem;
-  border-bottom:1px solid rgba(0,0,0,.125);
-}
-
 /* Copied from `.form-control` CSS */
 .input,
 .select,

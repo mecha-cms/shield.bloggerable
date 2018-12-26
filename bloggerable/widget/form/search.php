@@ -11,7 +11,7 @@ $content .= '</div>';
 $content .= '</div>';
 $content .= '</form>';
 
-Shield::get('widget', [
+static::widget([
     'id' => 'form-search',
     'title' => $language->search,
     'content' => $content

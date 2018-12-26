@@ -1,10 +1,10 @@
                 </div><!-- /.posts -->
                 <?php if ($site->is('pages') || $site->has('parent')): ?>
-                  <?php Shield::get('pager'); ?>
+                  <?php static::pager(); ?>
                 <?php endif; ?>
               </div><!-- /.main -->
             </main><!-- /.main-col -->
-            <?php Shield::get('aside'); ?>
+            <?php static::aside(); ?>
           </div><!-- /.main-content-row -->
         </div><!-- /.main-content-inner -->
       </div><!-- /.container -->
