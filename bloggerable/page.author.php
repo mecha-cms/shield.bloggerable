@@ -9,7 +9,7 @@
         $author = HTML::span($page->author . "");
     }
 
-    echo $language->posted_by__([$author, '<time datetime="' . $page->time->W3C . '" title="' . $page->time->W3C . '">' . substr($page->time->month(""), 0, 3) . ' ' . $page->time->day . ', ' . $page->time->year . '</time>'], true);
+    echo $language->posted_by__([$author, '<time datetime="' . $page->time->ISO8601 . '" title="' . $page->time->ISO8601 . '">' . substr($page->time->month(""), 0, 3) . ' ' . $page->time->day . ', ' . $page->time->year . '</time>'], true);
 
     ?>
   </li>
